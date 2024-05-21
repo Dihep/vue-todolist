@@ -18,8 +18,11 @@ createApp({
         }
     },
     methods: {
-        placeholderMethod() {
-            console.log(this.placeholderData);
+        addToList() {
+            debugger;
+            this.toDoList.push(this.newElement);
+            document.getElementById("newElement").value = ``;
+            //Qualcosa in Vue reimposta il valore precedente del "input", annullando la riga qui sopra.
         }
     }
 }).mount('#vueApp');
