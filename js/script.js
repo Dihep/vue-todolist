@@ -13,7 +13,8 @@ createApp({
                 `Cosa da fare 7`,
                 `Cosa da fare 8`,
                 `Cosa da fare 9`,
-            ]
+            ],
+            newElement: ``,
         }
     },
     methods: {
