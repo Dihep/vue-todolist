@@ -20,7 +20,10 @@
         <script src="https://unpkg.com/vue@3.4.27/dist/vue.global.js"></script>
 
         <div id="vueApp">
-            <li v-for="item in toDoList">{{item}}</li>
+            <li v-for="item in toDoList">
+                {{item}}
+            <button @click="removeElement(item)">Elimina</button>
+        </li>
             <input id="newElement" v-model="newElement"type="text" placeholder="Nuova cosa da fare">
             <button @click="addToList">Aggiungi alla lista</button>
         </div>

@@ -23,6 +23,9 @@ createApp({
             this.toDoList.push(this.newElement);
             document.getElementById("newElement").value = ``;
             //Qualcosa in Vue reimposta il valore precedente del "input", annullando la riga qui sopra.
+        },
+        removeElement(item) {           
+            // item.remove()...?
         }
     }
 }).mount('#vueApp');
